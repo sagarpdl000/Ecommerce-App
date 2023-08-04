@@ -17,14 +17,15 @@ function App() {
 
     <Routes>
     {/* Public pages */}
-    <Route path="/" element={ <Home/>} />
-    <Route path="/authentication" element={<Authentication/>}/>
+
+    <Route path="/" element={<Authentication/>}/>
     <Route path= '*' element = {<Error/>} />
 
 
     {/* private pages */}
     <Route element = {<RouteLayout/>} >
-    <Route path="/dashboard" element={<Dashboard/>} />
+    <Route path="/Home" element={ <Home/>} />
+    {/* <Route path="/dashboard" element={<Dashboard/>} /> */}
     </Route>
     </Routes>
     
